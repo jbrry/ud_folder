@@ -8,9 +8,11 @@ As a way of evaluating a parsing system after the official TIRA runs and when th
 
 In order to use these scripts you will need to get UDPipe: 
 
-- git clone https://github.com/ufal/udpipe
-- cd udpipe/src
-- make
+```
+git clone https://github.com/ufal/udpipe
+cd udpipe/src
+make
+```
 
 Then copy the 'udpipe/src/udpipe' binary executable to your $PATH or link it to /usr/bin/ etc. 
 
