@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # get test file for each treebank in the folder
-for tb in ~/ud-parsing-udpipe/ud-treebanks-v2.2/*/*-ud-test.conllu; do
+for tb in ~/ud_folder/ud-treebanks-v2.2/*/*-ud-test.conllu; do
   dir=`dirname $tb`
   echo $dir            # e.g. /home/james/ud-parsing-udpipe/ud-treebanks-v2.2/UD_Afrikaans-AfriBooms
   
