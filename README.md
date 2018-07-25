@@ -4,7 +4,7 @@ This is a folder for scripts related to UD Parsing.
 
 At the moment, the scripts are designed to turn gold CoNLLU files to UDPipe predicted output. This is useful to evaluate parsing systems which do not take in gold CoNLLU data as input, e.g. in the CoNLL UD Parsing shared tasks where systems are expected to parse raw text or UDPipe predicted output. 
 
-As a way of evaluating a parsing system after the official TIRA runs and when the VM has been re-allocated to TIRA, it will be useful to have a folder which contains the test data as it is found on TIRA (e.g. predicted by the baseline UDPipe).
+As a way of evaluating a parsing system after the official TIRA runs and when the VM has been re-allocated to TIRA, it will be useful to have a folder which contains the test data as it is found on TIRA (e.g. predicted by the baseline UDPipe) to carry on further experiments, perform sanity checks etc.
 
 In order to use these scripts you will need to get UDPipe: 
 
