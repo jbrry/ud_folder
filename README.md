@@ -21,7 +21,7 @@ You can download the baseline UDPipe 2.2 models which were used for the shared t
 
 - To get the UD 2.2 treebanks run `get_data.sh`
 - To create a folder for each treebank and convert the CoNLLU test file back to text run `create_test_text_file.sh`
-- Finally, to use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run 'udpipe_test.sh' (Wokr in Progress)
+- Finally, to use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh` (Work in Progress)
 
 ### Things which still need to be done:
 - Finish prediction script 'udpipe_test.sh'
@@ -36,4 +36,4 @@ Useful references and acknowledgements:
 4. http://universaldependencies.org/conll18/baseline.html
 5. http://wiki.apertium.org/wiki/UDPipe
 
-Thank you to the developers of UDPipe.
+I would like to thank the developers of UDPipe. 
