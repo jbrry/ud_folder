@@ -12,7 +12,7 @@ In order to use these scripts you will need to get UDPipe:
 - cd udpipe/src
 - make
 
-Then copy the 'udpipe/src/udpipe' binary executable to your $PATH or to /usr/bin/ etc. 
+Then copy the 'udpipe/src/udpipe' binary executable to your $PATH or link it to /usr/bin/ etc. 
 
 - To get the UD 2.2 treebanks run 'get_data.sh'
 - To create a folder for each treebank and convert the CoNLLU test file back to text run 'create_test_text_file.sh'
