@@ -6,6 +6,9 @@ At the moment, the scripts are designed to turn gold CoNLLU files to UDPipe pred
 
 As a way of evaluating a parsing system after the official TIRA runs and when the VM has been re-allocated to TIRA, it will be useful to have a folder which contains the test data as it is found on TIRA (e.g. predicted by the baseline UDPipe) to carry on further experiments, perform sanity checks etc.
 
+
+### Requirements
+
 In order to use these scripts you will need to get UDPipe: 
 
 ```
@@ -16,6 +19,8 @@ make
 
 Then copy the `udpipe/src/udpipe` binary executable to your $PATH or link it to /usr/bin/ etc. 
 
+- Baseline models 
+
 You can download the baseline UDPipe 2.2 models which were used for the shared task here: http://universaldependencies.org/conll18/baseline.html
 
 
@@ -23,19 +28,20 @@ You can download the baseline UDPipe 2.2 models which were used for the shared t
 - To create a folder for each treebank and convert the CoNLLU test file back to text run `create_test_text_file.sh`
 - Finally, to use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh` 
 
-### Things which still need to be done:
+Things which still need to be done:
+
 - Ensure we are using the same params used by UDPipe for the 2018 shared task
 - Ensure we are using the same models used by UDPipe the 2018 shared task, e.g. for the following cases:
 
-i. Czech PUD ← Czech PDT
-ii. English PUD ← English EWT
-iii. Finnish PUD ← Finnish TDT
-iv. Japanese Modern ← Japanese GSD
-v. Swedish PUD ← Swedish Talbanken
+1. Czech PUD ← Czech PDT
+2. English PUD ← English EWT
+3. Finnish PUD ← Finnish TDT
+4. Japanese Modern ← Japanese GSD
+5. Swedish PUD ← Swedish Talbanken
 
 - Mixed model for all other no train data cases. 
 
-Useful references and acknowledgements:
+### Useful references and acknowledgements:
 
 1. https://github.com/ufal/udpipe
 2. https://github.com/CoNLL-UD-2017/UFAL-UDPipe-1.2
