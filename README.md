@@ -21,12 +21,19 @@ You can download the baseline UDPipe 2.2 models which were used for the shared t
 
 - To get the UD 2.2 treebanks run `get_data.sh`
 - To create a folder for each treebank and convert the CoNLLU test file back to text run `create_test_text_file.sh`
-- Finally, to use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh` (Work in Progress)
+- Finally, to use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh` 
 
 ### Things which still need to be done:
-- Finish prediction script 'udpipe_test.sh'
 - Ensure we are using the same params used by UDPipe for the 2018 shared task
-- Ensure we are using the same splits used by UDPipe the 2018 shared task
+- Ensure we are using the same models used by UDPipe the 2018 shared task, e.g. for the following cases:
+
+i. Czech PUD ← Czech PDT
+ii. English PUD ← English EWT
+iii. Finnish PUD ← Finnish TDT
+iv. Japanese Modern ← Japanese GSD
+v. Swedish PUD ← Swedish Talbanken
+
+- Mixed model for all other no train data cases. 
 
 Useful references and acknowledgements:
 
