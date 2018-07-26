@@ -14,16 +14,15 @@ for tb in ~/ud_folder/ud-treebanks-v2.2/*/*-ud-test.conllu; do
   # lower the string and strip "UD_" to get the necessary key for the model 
   lower_long_name=$(echo "${long_name}" | awk '{print tolower($0)}')
   model_str=$(echo "${lower_long_name}" | awk '{print substr($0,4)}') # replace first three characters, e.g. "UD_"
-  echo ${model_str}
 
   code=`basename ${tb}`   # e.g. af_afribooms-ud-test.conllu
   code=${code%%-*}        # e.g. af_afribooms
   
   for text_file in ${code}/${code}*.txt; do 
-    echo "Now working on -- " ${text_file}
+    echo "Now working on --" ${text_file}
     if [[ -n $(find "${UDPIPE_MODEL_DIR}/" -name "${model_str}"*.udpipe) ]]
     then
-        echo "Found UDPipe model for ${model_str} "
+        echo "Found UDPipe model for ${model_str}"
         udpipe --tokenize --tag --parse "${UDPIPE_MODEL_DIR}"/"${model_str}"-ud-2.2-conll18-180430.udpipe ${text_file} > "$code/$code-udpipe.conllu"
     else 
 	echo "No UDPipe model found for ${model_str}, using mixed UDPipe model"
