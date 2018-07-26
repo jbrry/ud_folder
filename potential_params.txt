@@ -1,0 +1,19 @@
+Examples cases to use certain params:
+
+Case 1 (lines separated for easier viewing):
+Source: https://github.com/CoNLL-UD-2017/UFAL-UDPipe-1.2/blob/master/training/models-ud-1.2/train.sh
+
+./udpipe --train 
+
+--tokenizer=`grep "^$l " params_tokenizer | sed "s/^$l //"` 
+
+--tagger=`grep "^$l " params_tagger | sed "s/^$l //"` 
+
+--parser=`grep "^$l " params_parser | sed "s/^$l //"` 
+
+--heldout=../ud-1.2/$l/$l-ud-dev.conllu $l/$l.model ../ud-1.2/$l/$l-ud-train*.conllu
+
+Case 2:
+Source: https://github.com/TurkuNLP/conll17-system/blob/6c7f357e7d873be2a35f1df55adebc12931180f1/udpipe/train_submission_model.sh
+
+-tokenizer=`grep "^$l " params_tokenizer | sed "s/^$l //"` --train --tagger=`grep "^$l " params_tagger | sed "s/^$l //"` --parser=`grep "^$l " $parserparams | sed "s/^$l //"` $modelpath/$l.model $tmpdata/preprocessed-train.conllu
