@@ -43,7 +43,7 @@ Things which still need to be done:
 3. Finnish PUD ← Finnish TDT
 4. Japanese Modern ← Japanese GSD
 5. Swedish PUD ← Swedish Talbanken
-6. Mixed model for all cases with no training data. 
+6. Mixed model for all other cases with no training data. 
 
 ### Useful references and acknowledgements
 
