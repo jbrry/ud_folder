@@ -11,7 +11,7 @@ As a way of evaluating a parsing system after the official TIRA runs and when th
 
 ### Requirements
 
-In order to use these scripts you will need to get UDPipe: 
+In order to use these scripts you will need to get [UDPipe](http://ufal.mff.cuni.cz/udpipe): 
 
 ```
 git clone https://github.com/ufal/udpipe
@@ -21,7 +21,7 @@ make
 
 Then copy the `udpipe/src/udpipe` binary executable to your $PATH or link it to /usr/bin/ etc. 
 
-- Baseline models 
+#### Baseline models 
 
 You can download the baseline UDPipe 2.2 models which were used for the shared task here: http://universaldependencies.org/conll18/baseline.html
 
@@ -43,8 +43,7 @@ Things which still need to be done:
 3. Finnish PUD ← Finnish TDT
 4. Japanese Modern ← Japanese GSD
 5. Swedish PUD ← Swedish Talbanken
-
-- Mixed model for all other no train data cases. 
+6. Mixed model for all cases with no training data. 
 
 ### Useful references and acknowledgements
 
