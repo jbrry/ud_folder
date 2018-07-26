@@ -1,4 +1,6 @@
-# UD-Folder
+# ud-folder
+
+### Introduction
 
 This is a folder for scripts related to UD Parsing. 
 
@@ -23,10 +25,13 @@ Then copy the `udpipe/src/udpipe` binary executable to your $PATH or link it to 
 
 You can download the baseline UDPipe 2.2 models which were used for the shared task here: http://universaldependencies.org/conll18/baseline.html
 
+### Instructions
 
 - To get the UD 2.2 treebanks run `get_data.sh`
 - To create a folder for each treebank and convert the CoNLLU test file back to text run `create_test_text_file.sh`
 - Finally, to use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh` 
+
+### Work in progress
 
 Things which still need to be done:
 
@@ -41,7 +46,7 @@ Things which still need to be done:
 
 - Mixed model for all other no train data cases. 
 
-### Useful references and acknowledgements:
+### Useful references and acknowledgements
 
 1. https://github.com/ufal/udpipe
 2. https://github.com/CoNLL-UD-2017/UFAL-UDPipe-1.2
