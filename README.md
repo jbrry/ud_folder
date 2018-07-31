@@ -29,8 +29,8 @@ You can download the baseline UDPipe 2.2 models which were used for the shared t
 
 - To get the UD 2.2 treebanks run `get_data.sh`
 - To create a folder for each treebank and convert the CoNLLU test file back to text run `create_test_text_file.sh`
+- To use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh` 
 - To remove new treebanks which were released in v2.2 and were not part of the 2018 shared task run `remove_new_tbs.sh`.
-- Finally, to use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh` 
 
 ### Work in progress
 
