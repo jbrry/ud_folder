@@ -33,11 +33,14 @@ Using UDPipe to tokenize, tag and parse the data:
 - To create a folder for each treebank and convert the CoNLLU test file back to text run `create_test_text_file.sh`
 - To use UDPipe to predict on the test.txt files to generate UDPipe predcited CoNLLU files run `udpipe_test.sh`
 - To finish the remaining models which include the PUD cases run `low_resource.sh`
-- To remove new treebanks which were released in v2.2 and were not part of the 2018 shared task run `remove_new_tbs.sh`.
 
-Afterwards, we want to check the accuracy of on the test files to make sure they are as close as possible to the ones used in the shared task.
+Afterwards, we want to check the accuracy of the test files to make sure they are as close as possible to the ones used in the shared task.
 
-(tbc)
+- To get the accuracy on the primary / mixed model cases run `get_accuracy.sh`
+- To get the accuracy on the PUD + cases run `accuracy_low_resource.sh`
+- To call a script to display the parse results of all the files run `display results.sh`
+- Finally, to remove new treebanks which were released in v2.2 and were not part of the 2018 shared task run `remove_new_tbs.sh`.
+
 
 ### Work in progress
 
